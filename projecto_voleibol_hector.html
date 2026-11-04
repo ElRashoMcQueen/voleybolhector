@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projecto de voleibol Hector</title>
+<style>
+:root{--navy:#102a43;--blue:#1677c8;--sky:#e8f5ff;--yellow:#ffd447;--ink:#203040}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f5f9fc;line-height:1.6}
+header{background:linear-gradient(125deg,#0b2540,#1269ad);color:white;padding:22px max(5vw,20px);position:sticky;top:0;z-index:5;box-shadow:0 3px 15px #102a4333}
+.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.brand{font-weight:800;font-size:1.1rem}.nav a{color:white;text-decoration:none;margin:0 8px;font-weight:700;font-size:.92rem}.nav a:hover{color:var(--yellow)}
+.hero{background:linear-gradient(120deg,#0c3154dd,#137bc0cc),url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;padding:100px 20px;text-align:center}.hero h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:1.08;margin:0 auto 15px;max-width:900px}.hero p{font-size:1.15rem;max-width:700px;margin:0 auto 25px}.btn{display:inline-block;background:var(--yellow);color:#17324b;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:800}
+main{max-width:1100px;margin:auto;padding:30px 20px}section{padding:42px 0;scroll-margin-top:90px}.section-title{text-align:center;color:var(--navy);font-size:2rem;margin:0 0 10px}.intro{text-align:center;max-width:760px;margin:0 auto 28px;color:#526575}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:white;border-radius:16px;padding:22px;box-shadow:0 5px 20px #183b5510;border:1px solid #e2edf5}.card h3{color:#1269ad;margin-top:0}.year{font-size:1.5rem;font-weight:900;color:#1677c8}.fact{border-top:5px solid var(--yellow)}.fact .emoji{font-size:2rem}.rules{counter-reset:rule}.rule{position:relative;padding-left:58px}.rule:before{counter-increment:rule;content:counter(rule);position:absolute;left:18px;top:20px;background:#e4f3ff;color:#1269ad;font-weight:900;width:28px;height:28px;border-radius:50%;display:grid;place-items:center}
+.highlight{background:#eaf5fc;border-left:5px solid #1677c8;padding:18px 22px;border-radius:10px;margin:20px 0}.org{display:flex;gap:20px;align-items:center;flex-wrap:wrap}.org-mark{background:#e8f5ff;color:#1269ad;border-radius:18px;padding:25px;font-size:2rem;font-weight:900}
+footer{text-align:center;background:var(--navy);color:white;padding:28px 20px;margin-top:35px}footer a{color:var(--yellow)}
+@media(max-width:600px){header{position:static}.nav{justify-content:center}.nav nav{text-align:center}.hero{padding:75px 18px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">🏐 PROJECTO DE VOLEIBOL HECTOR</div><nav><a href="#inicio">Inicio</a><a href="#historia">Historia</a><a href="#reglas">Reglas</a><a href="#organizacion">Organización</a><a href="#curiosidades">Datos curiosos</a></nav></div></header>
+<div class="hero" id="inicio"><h1>PROJECTO DE VOLEIBOL HECTOR</h1><p>Descubre cómo nació este deporte, cuáles son sus reglas y los datos más sorprendentes de la cancha.</p><a class="btn" href="#historia">¡Comenzar a explorar!</a></div>
+<main>
+<section id="historia"><h2 class="section-title">¿Dónde surgió el voleibol?</h2><p class="intro">El voleibol nació en 1895 en Holyoke, Massachusetts, Estados Unidos. Su creador fue William George Morgan, un instructor de educación física de la YMCA. Quería inventar un deporte de equipo con menos contacto físico que el baloncesto.</p><div class="highlight"><strong>¿Sabías que antes se llamaba Mintonette?</strong> En 1896, después de una demostración, se propuso el nombre “Volley Ball”, por la acción de volear el balón antes de que tocara el suelo. Con el tiempo se escribió “volleyball”.</div><h3 style="color:#102a43;text-align:center">Línea del tiempo</h3><div class="grid">
+<div class="card"><div class="year">1895</div><h3>Nace el deporte</h3><p>William G. Morgan crea la Mintonette en Estados Unidos.</p></div>
+<div class="card"><div class="year">1896</div><h3>Nuevo nombre</h3><p>Se presenta el juego y se propone llamarlo Volley Ball.</p></div>
+<div class="card"><div class="year">1947</div><h3>Organización mundial</h3><p>Se funda la Federación Internacional de Voleibol (FIVB).</p></div>
+<div class="card"><div class="year">1964</div><h3>Debut olímpico</h3><p>El voleibol entra al programa de los Juegos Olímpicos de Tokio.</p></div>
+<div class="card"><div class="year">1996</div><h3>Voleibol de playa</h3><p>La modalidad de playa debuta en los Juegos Olímpicos de Atlanta.</p></div>
+</div></section>
+<section id="reglas"><h2 class="section-title">Reglas principales</h2><p class="intro">El objetivo es enviar el balón por encima de la red para que toque el suelo del campo rival, evitando que caiga en el propio.</p><div class="grid rules">
+<div class="card rule"><h3>Seis jugadores</h3><p>Cada equipo tiene seis jugadores en la cancha al mismo tiempo.</p></div>
+<div class="card rule"><h3>Hasta tres toques</h3><p>Un equipo puede tocar el balón hasta tres veces para devolverlo. El toque de bloqueo no cuenta entre esos tres.</p></div>
+<div class="card rule"><h3>Rotación</h3><p>Cuando el equipo receptor gana el derecho a sacar, sus jugadores rotan una posición en sentido de las agujas del reloj.</p></div>
+<div class="card rule"><h3>El saque</h3><p>Se realiza desde detrás de la línea de fondo y debe pasar por encima de la red.</p></div>
+<div class="card rule"><h3>Sets y puntos</h3><p>Gana el partido el equipo que consigue tres sets. Los sets normales se juegan a 25 puntos y el quinto, si hace falta, a 15; siempre hay que ganar por dos puntos.</p></div>
+<div class="card rule"><h3>Faltas comunes</h3><p>Son faltas, por ejemplo, dar cuatro toques, retener o acompañar el balón, tocar la red durante la acción de jugarlo o enviarlo fuera.</p></div>
+</div><div class="highlight"><strong>Medidas de la cancha:</strong> 18 metros de largo por 9 metros de ancho. La red mide 2.43 m de altura en la categoría masculina adulta y 2.24 m en la femenina adulta.</div></section>
+<section id="organizacion"><h2 class="section-title">¿Quién organiza el voleibol?</h2><div class="card org"><div class="org-mark">FIVB</div><div style="flex:1;min-width:230px"><h3>Federación Internacional de Voleibol</h3><p>La FIVB es el organismo internacional que dirige el voleibol y el voleibol de playa. Fue fundada en 1947. Entre sus tareas están establecer las reglas internacionales, organizar competencias y apoyar el desarrollo del deporte en el mundo.</p><p>En México, la Federación Mexicana de Voleibol se encarga de impulsar y organizar este deporte a nivel nacional.</p><p><a href="https://www.fivb.com/" target="_blank" rel="noopener">Visitar el sitio oficial de la FIVB ↗</a></p></div></div></section>
+<section id="curiosidades"><h2 class="section-title">Datos curiosos que quizá no conocías</h2><p class="intro">¡El voleibol tiene historias y detalles sorprendentes!</p><div class="grid">
+<div class="card fact"><div class="emoji">🧤</div><h3>El líbero tiene uniforme distinto</h3><p>Este jugador especializado en defensa debe usar una camiseta de color diferente a la de sus compañeros para que se identifique fácilmente.</p></div>
+<div class="card fact"><div class="emoji">🏖️</div><h3>En la playa son solo cuatro</h3><p>El voleibol de playa olímpico se juega con dos integrantes por equipo, sobre arena, en una cancha más pequeña que la de sala.</p></div>
+<div class="card fact"><div class="emoji">🚀</div><h3>Un saque puede ser un ataque</h3><p>Un saque potente puede viajar a gran velocidad y dificultar muchísimo la recepción del equipo contrario.</p></div>
+<div class="card fact"><div class="emoji">🔄</div><h3>La rotación cambia las posiciones</h3><p>Los jugadores deben respetar el orden de rotación al momento del saque. ¡Por eso deben estar atentos a dónde les toca jugar!</p></div>
+<div class="card fact"><div class="emoji">⏱️</div><h3>No hay tiempo fijo de partido</h3><p>Un encuentro puede durar poco más de una hora o alargarse bastante: depende de lo reñidos que sean los sets.</p></div>
+<div class="card fact"><div class="emoji">🧱</div><h3>El bloqueo no cuenta como toque</h3><p>Después de un bloqueo, el equipo todavía dispone de hasta tres contactos para devolver el balón.</p></div>
+<div class="card fact"><div class="emoji">📏</div><h3>La cancha es un rectángulo exacto</h3><p>Mide 18 por 9 metros y cada lado queda dividido en dos zonas de 9 por 9 metros.</p></div>
+<div class="card fact"><div class="emoji">🏅</div><h3>También hay voleibol sentado</h3><p>Es una modalidad paralímpica: los jugadores compiten sentados y la cancha y la red tienen medidas adaptadas.</p></div>
+</div></section>
+<section><h2 class="section-title">¡El voleibol es más que un juego!</h2><p class="intro">Este deporte fomenta el trabajo en equipo, la comunicación, la disciplina y el respeto. Cada punto se construye con la participación de todos.</p></section>
+</main>
+<footer><strong>🏐 Projecto de voleibol Hector</strong><p>Trabajo escolar · Historia, reglas y curiosidades del voleibol</p><small>Información general basada en las reglas internacionales del voleibol.</small></footer>
+</body></html>
